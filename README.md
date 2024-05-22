@@ -105,9 +105,9 @@ This is how we split the workload, we tried to split it in a way so that every d
 
 | Member  | Responsibilities                                                                      |
 |---------|---------------------------------------------------------------------------------------|
-| Heydari | JavaFX UI (automatic loading of PDF), DataCollectionDispatcher, PDFGenerator, Testing |
-| Xhunga  | JavaFX UI, StationDataCollector, PDFGenerator, UML Diagram                            |
-| Zullash | GitHub & Project Organisation, SpringBoot API, DataCollectionReceiver, Documentation  |
+| Zhang   | JavaFX UI (automatic loading of PDF), DataCollectionDispatcher, PDFGenerator, Testing |
+| Xie     | StationDataCollector, PDFGenerator, UML Diagram                            |
+| Wang    | GitHub & Project Organisation, JavaFX UI, SpringBoot API, DataCollectionReceiver, Documentation  |
 
 
 
