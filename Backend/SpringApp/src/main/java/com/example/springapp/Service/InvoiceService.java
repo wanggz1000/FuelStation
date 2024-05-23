@@ -23,7 +23,7 @@ public class InvoiceService {
     }
 
     public List<String> getInvoice(int customerID) {
-        String fileStoragePath = ".\\Backend\\FileStorage\\";
+        String fileStoragePath = "./Backend/FileStorage/";
         String filePath = fileStoragePath + customerID + ".pdf";
         Path path = Paths.get(filePath);
         if (Files.exists(path) && Files.isRegularFile(path)) {

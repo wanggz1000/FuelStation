@@ -2,14 +2,11 @@
 
 ## About the project
 
-This project was created by Hadi Heydari, Kevin Xhunga and Safwan Zullash
+This project was created by Guanzhong Wang, Ailing Xie and Yuchang Zhang
 as a team for our company which manages charging stations for electric cars. The goal of this project is the fullstack development 
-of a Fuel Station App. Customers can use this application to generate invoices for their electric car charging activities. 
+of a Fuel Station App. Customers can use this application to generate invoices. 
 
-For the frontend we used a simple JavaFX UI and to build our API we used the SpringBoot framework. 
-Furthermore, we used RabbitMQ to align our messages and requests between the services and the databases, which are PostgreSQL instances.
-To accommodate the whole development team and ensure the same working environments for everyone we used GitHub 
-as our version control system to host our repository (link to repository can be found [here](#clone-the-project-repository)) and additionally make use of Docker containers for the databases and the RabbitMQ instance.
+We developed the frontend using a straightforward JavaFX interface, while the API was constructed with the SpringBoot framework. For message and request coordination among services and databases, we utilized RabbitMQ. The databases themselves are PostgreSQL instances. To provide consistent working environments across the development team, we employed GitHub for version control, hosting our repository. Additionally, we used Docker containers to manage the databases and the RabbitMQ instance.
 
 ## System Architecture
 
@@ -21,12 +18,12 @@ This UML diagram visualises our system architecture:
 
 ### Clone the project repository
 
-To use our application first you need to clone this whole project from our [GitHub repository](https://github.com/wi21b030/FuelStation). 
+To use our application first you need to clone this whole project from our https://github.com/wanggz1000/FuelStation
 You can either do this with for example IntelliJ's built-in tool or run this command in your preferred command line interpreter within the directory you wish to save the project in:
 
 ```bash
 cd "path/to/your/desired/folder/"
-git clone "https://github.com/wi21b030/FuelStation.git"
+git clone "https://github.com/wanggz1000/FuelStation.git"
 ```
 
 ### Start application modules and services
@@ -35,17 +32,17 @@ Then follow these steps:
 
 1. Start your Docker Desktop application and then open your preferred command line interpreter and run the commands below. This will run the docker-compose file and create the databases and the RabbitMQ queue in a containerised environment.
     ```bash
-    cd "./Backend/Databases" # switch to this directory starting from the root directory of this project
+    cd "./Backend/Databases" 
     docker compose up
     ```
 2. Once the containers are up and running you need to open this project in IntelliJ.
-3. Then run these parts of the application in this order:
-   1. Java FX UI - [Here](./Frontend/JavaFXApp/src/main/java/com/example/javafxapp/HelloApplication.java)
-   2. SpringBoot API - [Here](./Backend/SpringApp/src/main/java/com/example/springapp/SpringAppApplication.java)
-   3. DataCollectionDispatcher - [Here](./Backend/DataCollectionDispatcher/src/main/java/org/example/Main.java)
-   4. StationDataCollector - [Here](./Backend/StationDataCollector/src/main/java/org/example/Main.java)
-   5. DataCollectionReceiver - [Here](./Backend/DataCollectionReceiver/src/main/java/org/example/Main.java)
-   6. PDFGenerator - [Here](./Backend/PDFGenerator/src/main/java/org/example/PdfGenerator/PDFGenerator.java)
+3. Then run these parts of the application in this order:  
+   Step 1: Java FX UI  
+   Step 2: SpringBoot API  
+   Step 3: DataCollectionDispatcher   
+   Step 4: StationDataCollector   
+   Step 5: DataCollectionReceiver   
+   Step 6: PDFGenerator   
 
 After you have started all these you can now use the application.
 
@@ -53,39 +50,22 @@ After you have started all these you can now use the application.
 
 Throughout the development of this project, our team gained following key lessons:
 
-1. **Effective collaboration with version control:** 
-   Working as a team and making use of a version control tool like GitHub improved our collaboration and code management. 
-   It allowed us to work concurrently on different parts of the project, track changes, merge code and resolve conflicts.
+1. **Enhanced Teamwork with Version Control:** 
+   Utilizing GitHub as our version control system significantly boosted our teamwork and code management capabilities. This tool enabled simultaneous work on various segments of     the project, efficient tracking of modifications, code merging, and conflict resolution.
 
-2. **Speed and ease of development environments with Docker:** 
-   Docker containers played an important role in making our development process faster and easier. 
-   By containerizing our databases and RabbitMQ instance, we ensured consistency across different team members' environments.
-
-3. **Learning curve of new technologies:**
-   As we incorporated new technologies like JavaFX, Spring Boot, and RabbitMQ into our project, 
-   we encountered a learning curve, but documentation and online resources helped us to obtain 
-   new skills and make use of them appropriately.
-   For the usage of RabbitMQ it was important to have a clear understanding of how the messages are sent and received, and to agree on a pattern.
-
-4. **Clear communication and coordination:** 
-   Effective communication and coordination among team members was essential for the success of the project. 
-   Regular meetings, clear task assignment, and ongoing updates ensured that everyone was on the same page.
-
+2. **Streamlined Development Environments with Docker:** 
+   Docker containers were instrumental in accelerating and simplifying our development process. By containerizing our databases and the RabbitMQ instance, we achieved environment    consistency across all team members.
+3. **Navigating the Learning Curve of Emerging Technologies:**
+   Integrating new technologies such as JavaFX, Spring Boot, and RabbitMQ presented a learning challenge. However, thorough documentation and accessible online resources were        pivotal in helping us acquire necessary skills and effectively implement these technologies. Understanding the mechanics of message exchanges in RabbitMQ was crucial,             necessitating a consensus on communication patterns.
+4. **Effective Communication and Project Coordination:** 
+   Clear and consistent communication among team members was crucial for our project's success. Regular meetings, precise task delegations, and continuous updates ensured            alignment and shared understanding within the team.
 5. **Understanding system architecture and component integration:** 
-   Developing a distributed system required a clear understanding of the overall system architecture 
-   and how different components interacted with each other. Therefore, it was important that every team member understood the
-   design decisions and the theory behind them. 
-
+   The development of our distributed system demanded a deep understanding of the system architecture and the interactions between various components. It was essential for all       team members to grasp the design principles and theoretical underpinnings of our project.
 6. **Error handling and troubleshooting:**
    Throughout the project, we learned the importance of thorough error handling and debugging 
    to identify and resolve issues promptly.
 
-There is still a lot of room to improve especially when it comes to making our components and modules more loosely coupled and reusable
-for future scaling and using interfaces more often, which is something we missed out on because of time bottlenecks regarding other projects 
-that each member of the team simultaneously had to work on. Furthermore, we were a bit restricted by having specific demands from management
-i.e. on which technologies to use such as JavaFX and SpringBoot, because some team members have different skill sets and experiences.
-Therefore, we would prefer to find a way in the future to be more flexible in this aspect. Ultimately we learned a lot and have gained experiences
-that will be valuable for future projects.
+There is significant potential for improvement, particularly in enhancing the modularity and reusability of our components. This will be crucial for future scalability and more frequent use of interfaces, an area we overlooked due to time constraints from concurrent projects each team member was involved with. Additionally, we faced certain limitations imposed by management directives regarding the use of specific technologies like JavaFX and SpringBoot, which didn't always align with the varied skill sets and experiences within our team. Moving forward, we aim to adopt a more flexible approach to technology choices. Despite these challenges, the project was a valuable learning experience that will benefit our future endeavors.
 
 ## Unit-Testing Decisions
 
@@ -125,9 +105,9 @@ This is how we split the workload, we tried to split it in a way so that every d
 
 | Member  | Responsibilities                                                                      |
 |---------|---------------------------------------------------------------------------------------|
-| Heydari | JavaFX UI (automatic loading of PDF), DataCollectionDispatcher, PDFGenerator, Testing |
-| Xhunga  | JavaFX UI, StationDataCollector, PDFGenerator, UML Diagram                            |
-| Zullash | GitHub & Project Organisation, SpringBoot API, DataCollectionReceiver, Documentation  |
+| Zhang   | JavaFX UI (automatic loading of PDF), DataCollectionDispatcher, PDFGenerator, Testing |
+| Xie     | StationDataCollector, PDFGenerator, UML Diagram                            |
+| Wang    | GitHub & Project Organisation, JavaFX UI, SpringBoot API, DataCollectionReceiver, Documentation  |
 
 
 
