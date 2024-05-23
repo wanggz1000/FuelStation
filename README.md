@@ -37,12 +37,12 @@ Then follow these steps:
     ```
 2. Once the containers are up and running you need to open this project in IntelliJ.
 3. Then run these parts of the application in this order:
-   Step 1: Java FX UI 
-   Step 2: SpringBoot API
-   Step 3: DataCollectionDispatcher 
-   Step 4: StationDataCollector 
-   Step 5: DataCollectionReceiver 
-   Step 6: PDFGenerator 
+   ####Step 1: Java FX UI 
+   ####Step 2: SpringBoot API
+   ####Step 3: DataCollectionDispatcher 
+   ####Step 4: StationDataCollector 
+   ####Step 5: DataCollectionReceiver 
+   ####Step 6: PDFGenerator 
 
 After you have started all these you can now use the application.
 
