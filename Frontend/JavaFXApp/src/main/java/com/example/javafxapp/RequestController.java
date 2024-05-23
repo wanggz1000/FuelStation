@@ -82,7 +82,7 @@ public class RequestController extends Application {
                     Platform.runLater(() -> responseCreationInvoice.setText(responseBody));
                     responseCreationInvoice.setVisible(true);
                     try {
-                        File file = new File(".\\Backend\\FileStorage\\"+id+".pdf");
+                        File file = new File("./Backend/FileStorage/"+id+".pdf");
                         HostServices hostServices = getHostServices();
                         hostServices.showDocument(file.getAbsolutePath());
                     } catch (Exception e) {
