@@ -13,8 +13,9 @@ public class DataCollectionReceiver {
         this.queue = queue;
     }
 
-    public void waitForData() throws IOException, TimeoutException {
-        this.queue.consumeExpectedMessages();
+    public void waitForData() throws TimeoutException , IOException {
         this.queue.consumeActualMessages();
+        this.queue.consumeExpectedMessages();
+
     }
 }

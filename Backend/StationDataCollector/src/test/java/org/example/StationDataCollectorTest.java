@@ -36,6 +36,6 @@ public class StationDataCollectorTest {
         float kwh = queue.getKWH("db_url=localhost:30012&id=2");
         String kwhString = String.format("%.2f", kwh);
 
-        assertEquals("237,80", kwhString);
+        assertEquals("237.80", kwhString);
     }
 }

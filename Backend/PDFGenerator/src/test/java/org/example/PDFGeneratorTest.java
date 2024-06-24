@@ -10,14 +10,6 @@ import static org.mockito.Mockito.when;
 public class PDFGeneratorTest {
     Customer customer = mock(Customer.class);
 
-    @Test
-    public void getIdTest() {
-        when(customer.getId()).thenReturn(3);
-
-        int id = customer.getId();
-
-        assertEquals(3, id);
-    }
 
     @Test
     public void getFirstNameTest() {
@@ -26,6 +18,14 @@ public class PDFGeneratorTest {
         String first = customer.getFirstName();
 
         assertEquals("First", first);
+    }
+    @Test
+    public void getIdTest() {
+        when(customer.getId()).thenReturn(3);
+
+        int id = customer.getId();
+
+        assertEquals(3, id);
     }
 
     @Test
