@@ -89,14 +89,14 @@ In this table you can see the days every team member worked on and the hours we 
 
 | Date       | Activity                                  | Hours Worked p.P. |
 |------------|-------------------------------------------|-------------------|
-| 18.05.2023 | First Set-Up Meeting                      | 9                 |
-| 27.05.2023 | Work on DCD                               | 9                 |
-| 28.05.2023 | DCD error fixed                           | 7                 |
-| 04.06.2023 | All other services                        | 8                 |
-| 06.06.2023 | PDF Generator finished                    | 7                 |
-| 13.06.2023 | Testing, error, restructuring             | 8                 |
-| 17.06.2023 | Final meeting for finishing documentation | 4                 |
-| 18.06.2023 | DCR hotfix and documentation update       | 8                 |
+| 18.05.2024 | First Set-Up Meeting                      | 9                 |
+| 27.05.2024 | Work on DCD                               | 9                 |
+| 28.05.2024 | DCD error fixed                           | 7                 |
+| 04.06.2024 | All other services                        | 8                 |
+| 06.06.2024 | PDF Generator finished                    | 7                 |
+| 13.06.2024 | Testing, error, restructuring             | 8                 |
+| 17.06.2024 | Final meeting for finishing documentation | 4                 |
+| 18.06.2024 | DCR hotfix and documentation update       | 8                 |
 | **Total**  |                                           | **60**            |
 
 ## Project Responsibilities
